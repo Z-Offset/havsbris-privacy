@@ -5,57 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Integritetspolicy – Havsbris</title>
   <style>
+    :root {
+      --navy: #0f172a;
+      --slate: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --gold: #c9a227;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #fff;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--navy);
+      margin: 0;
+      padding: 40px 20px 80px;
     }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 8px; }
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 36px 0 10px;
+      color: #fff;
+    }
     p, li { font-size: 16px; }
-    .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
-    a { color: #007aff; }
-  </style>
-</head>
-<body>
-  <h1>Integritetspolicy för Havsbris</h1>
-  <p class="updated">Senast uppdaterad: 14 oktober 2026</p>
-
-  <p>Havsbris är en app för marint väder och vind. Vi värnar om din integritet och samlar in så lite data som möjligt.</p>
-
-  <h2>Vilken information samlar vi in?</h2>
-  <p>Appen samlar <strong>inte</strong> in personuppgifter som namn, e-postadress eller kontoinformation. Du behöver inte skapa ett konto.</p>
-  <ul>
-    <li><strong>Plats (valfritt):</strong> Om du ger appen tillåtelse att använda din plats används den enbart för att hitta närmaste mätstation. Platsen skickas inte till våra servrar och sparas inte.</li>
-    <li><strong>Favoriter:</strong> Dina favoritstationer och favoritplatser sparas lokalt på din enhet med AsyncStorage. De skickas inte någonstans.</li>
-    <li><strong>Väderdata:</strong> Appen hämtar offentliga väder- och vinddata från tredjepartstjänster (t.ex. Open-Meteo, SMHI ViVa, RainViewer). Dessa förfrågningar innehåller inte information som kan identifiera dig personligen.</li>
-  </ul>
-
-  <h2>Delar vi din information?</h2>
-  <p>Nej. Vi säljer, hyr ut eller delar inte någon användardata med tredje part.</p>
-
-  <h2>Tredjepartstjänster</h2>
-  <p>Appen använder offentliga API:er för väderdata. Dessa tjänster har sina egna integritetspolicyer:</p>
-  <ul>
-    <li>Open-Meteo</li>
-    <li>SMHI / ViVa</li>
-    <li>RainViewer</li>
-    <li>OpenSeaMap</li>
-  </ul>
-
-  <h2>Dina rättigheter</h2>
-  <p>Eftersom vi inte samlar in personuppgifter finns det ingen data att begära ut, rätta eller radera från vår sida. Du kan när som helst ta bort appen för att radera all lokalt sparad data (favoriter).</p>
-
-  <h2>Ändringar i denna policy</h2>
-  <p>Vi kan uppdatera denna integritetspolicy. Den senaste versionen finns alltid tillgänglig på denna sida.</p>
-
-  <h2>Kontakt</h2>
-  <p>Om du har frågor om denna integritetspolicy kan du kontakta oss via App Store-sidan för Havsbris eller på e-post som anges där.</p>
-
-  <p style="margin-top: 48px; color: #888; font-size: 14px;">© 2026 Havsbris</p>
-</body>
-</html>
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    strong { color: #fff; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; 
